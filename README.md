@@ -1,4 +1,4 @@
-# MJev-Spatial project page
+# MJev-Spatial Project Page
 
 Research website for **MJev-Spatial: System One Spatial Intelligence via Native Attention Matching**.
 
