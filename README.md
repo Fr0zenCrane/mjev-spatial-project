@@ -5,7 +5,7 @@ Research website for **MJev-Spatial: System One Spatial Intelligence via Native 
 - Website: https://fr0zencrane.github.io/mjev-spatial-project/
 - Paper: https://arxiv.org/abs/2610.22276
 - Model implementation: https://github.com/Fr0zenCrane/MJev-Spatial
-- Model weights: https://huggingface.co/Fr0zencr4nE/MJev-Spatial-Qwen-3.5-4B
+- Model weights: https://huggingface.co/mindlab-research/MJev-Spatial-4B
 
 ## Local preview
 

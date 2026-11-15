@@ -21,13 +21,13 @@
 <section class="hero container" aria-labelledby="paper-title">
 <h1 id="paper-title"><img class="hero-wordmark" src="assets/mjev-spatial-wordmark.png" alt="MJev-Spatial" width="3482" height="556" fetchpriority="high"></h1>
 <p class="paper-title">System One Spatial Intelligence<br>via Native Attention Matching</p>
-<div class="authors" aria-label="Authors"><span>Luozheng Qin<sup>*</sup></span><span>Yuhan Zhu<sup>*</sup></span><span>Changhai Zhou<sup>*</sup></span><span>Qian Qiao</span><span>Jun Gao</span><span>Yuhua Zhou</span><span>Harry Zhang</span><span>Xiangyu Zeng</span><span>Yuxuan Liu</span><span>Kaijie Chen</span><span>Andrew Chen</span><span>Pony Ma</span></div>
+<div class="authors" aria-label="Authors"><span>Luozheng Qin<sup>*</sup></span><span>Yuhan Zhu<sup>*</sup></span><span>Changhai Zhou<sup>*</sup></span><span>Qian Qiao</span><span>Jun Gao</span><span>Yuhua Zhou</span><span>Harry Zhang</span><span>Xiangyu Zeng</span><span>Yuxuan Liu</span><span>Yuxin Lu</span><span>Kaijie Chen</span><span>Andrew Chen</span><span>Pony Ma</span></div>
 <p class="affiliation">MindLab</p>
 <p class="contributions">* Equal contribution <span>October 2026</span></p>
 <div class="resource-links">
 <a class="button primary" href="https://arxiv.org/pdf/2610.22276" target="_blank" rel="noopener"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 2h7l4 4v12H5ZM12 2v5h4M8 10h5M8 13h5"/></svg>Paper ↗</a>
 <a class="button secondary" href="https://github.com/Fr0zenCrane/MJev-Spatial" target="_blank" rel="noopener"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m7 5-5 5 5 5m6-10 5 5-5 5M11 3 9 17"/></svg>Code ↗</a>
-<a class="button secondary" href="https://huggingface.co/Fr0zencr4nE/MJev-Spatial-Qwen-3.5-4B" target="_blank" rel="noopener"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m10 2 8 4-8 4-8-4 8-4Zm-8 8 8 4 8-4M2 14l8 4 8-4"/></svg>Model ↗</a>
+<a class="button secondary" href="https://huggingface.co/mindlab-research/MJev-Spatial-4B" target="_blank" rel="noopener"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m10 2 8 4-8 4-8-4 8-4Zm-8 8 8 4 8-4M2 14l8 4 8-4"/></svg>Model ↗</a>
 </div>
 <div class="teaser"><figure class="paper-figure"><button class="figure-zoom" data-figure="assets/figure-1-teaser.png" aria-label="Enlarge MJev-Spatial overview: benchmark scores, performance–latency trade-off, and unified classification framework."><img src="assets/figure-1-teaser.png" alt="MJev-Spatial overview: benchmark scores, performance–latency trade-off, and unified classification framework." width="2612" height="1060" fetchpriority="high"><span aria-hidden="true">⤢</span></button></figure></div>
 <div class="overview" id="overview"><h2 class="heading-with-icon"><svg class="section-icon" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path d="M3 3h4c2 0 4 1 5 2 1-1 3-2 5-2h4v16h-4c-2 0-4 1-5 2-1-1-3-2-5-2H3ZM12 5v16"/></svg><span>Overview</span></h2><p><strong>MJev-Spatial is a System 1 multimodal decision model for spatial intelligence</strong>, unifying option selection, numerical estimation, and image pointing through direct classification. Conventional vision-language models solve these compact-output tasks by generating and parsing answer text. We instead treat each candidate as a class and score it using the backbone’s pretrained query and key projections, without adding a prediction head. Numerical values and image locations are refined through coarse-to-fine classification. Each decision takes a single forward pass and generates no answer tokens.</p><p>Built on Qwen3.5-4B and trained on 12.3M question–answer pairs converted from existing spatial datasets, MJev-Spatial achieves the highest overall score (65.64%) among eight evaluated models, ranks first on seven of twelve benchmarks, and outperforms its autoregressive base model on all twelve. It runs 2.5× faster than the fastest autoregressive baseline and 5.6× faster than the base model. Joint supervision of all refinement stages, length-aware global batching, and cross-GPU load balancing improve training throughput by 30.8%.</p></div>
@@ -51,7 +51,7 @@
   author = {Qin, Luozheng and Zhu, Yuhan and Zhou, Changhai
             and Qiao, Qian and Gao, Jun and Zhou, Yuhua
             and Zhang, Harry and Zeng, Xiangyu and Liu, Yuxuan
-            and Chen, Kaijie and Chen, Andrew and Ma, Pony},
+            and Lu, Yuxin and Chen, Kaijie and Chen, Andrew and Ma, Pony},
   journal = {arXiv preprint arXiv:2610.22276},
   year = {2026},
   url = {https://arxiv.org/abs/2610.22276}
